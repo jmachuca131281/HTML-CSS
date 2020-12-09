@@ -1,0 +1,15 @@
+a:hover { 
+    color: rgb(253, 5, 5);
+}
+
+a:focus {
+    color: rgb(21, 255, 0);
+  }
+
+p{
+    font-style:italic;
+}
+
+div.destacado ul.importante li {
+    color: red;
+  }

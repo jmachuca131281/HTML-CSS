@@ -1,0 +1,1 @@
+{"Size": 1, "Width":215.9, "Height":279.4, "Left": 10, "Right": 10, "Top": 90, "Bottom": 140 }

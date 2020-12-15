@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .emmet {
+      margin: auto;
+      height: auto;
+      height: auto;
+      width: auto;
+      color: #000;
+      background: #000;
+      background-color: #fff;
+    }
+
+    .header-blue {
+      color: rgb(255, 255, 255);
+      background: rgb(53, 43, 134);
+    }
+
+    col{
+      background: rgb(152, 166, 187);
+    }
+
+    .col2{
+      background-color: rgb(230, 17, 17);
+    }
+
+    .col3{
+      background-color: rgb(18, 110, 59);
+    }
+
+  </style>
+</head>
+
+<body>
+  <table border=1>
+    <caption>Con caption le ponemos el titulo de la tabla</caption>
+    <thead>
+      <tr>
+        <th>Textos</th>
+        <th>Textos</th>
+        <th>Textos</th>
+        <th>Textos</th>
+        <th>Textos</th>
+        <th>Textos</th>
+        <th>Textos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Textos</td>
+        <td>Textos</td>
+        <td>Textos</td>
+        <td>Textos</td>
+        <td>Textos</td>
+        <td>Textos</td>
+        <td>Textos</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Cantidad de ítems</td>
+        <td colspan="6"></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table border=2>
+    <caption><strong>Tabla para body</strong></caption>
+    <theader>
+      <tr>
+        <th>Headers</th>
+        <th>Headers</th>
+        <th>Headers</th>
+        <th>Headers</th>
+        <th>Headers</th>
+        <th>Headers</th>
+        <th>Headers</th>
+      </tr>
+    </theader>
+    <tbody>
+      <tr>
+        <td>Body</td>
+        <td>Body</td>
+        <td>Body</td>
+        <td>Body</td>
+        <td>Body</td>
+        <td>Body</td>
+        <td>Body</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Cantidad de ítems:</td>
+        <td colspan="6">rowspanjajsjd</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- table>(theader>tr>(th)*3)+(tbody>tr>(td)*3)+(tfoot>tr>(td)*1) -->
+  <h2>Esctructura basica de tablas</h2>
+  <table border=2>
+    <caption>Horario de clases</caption>
+    <colgroup>
+      <col>
+      <col class="col2">
+      <col class="col3">
+    </colgroup>
+    <thead class="header-blue">
+      <tr>
+        <th></th>
+        <th>L</th>
+        <th>M</th>
+        <th>M</th>
+        <th>J</th>
+        <th>V</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td bgcolor="blue">8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+      <tr>
+        <td>8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+      <tr>
+        <td>8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+      <tr>
+        <td>8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+      <tr>
+        <td>8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+      <tr>
+        <td>8:30 - 9:30</td>
+        <td>Matemáticas</td>
+        <td>Matemáticas</td>
+        <td>Sociales</td>
+        <td>Matématicas</td>
+        <td>Matemáticas</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td>Cantidad de materias</td>
+      <td colspan="6"> 12</td>
+    </tfoot>
+  </table>
+
+  <table style="
+         width: 100%;
+         border-collapse: collapse;
+         border: 2px blue solid;
+         caption-side: bottom;
+         /* empty-cells: show; */
+         " border=1>
+    <caption><strong>Table border collapse</strong></caption>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp; este es otro</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+
+  <h3>Atributos de las tablas</h3>
+  <p>
+    <strong>align:</strong> Alinea horizontalmente la tabla con respecto a su entorno.
+  </p>
+  <p>
+    <strong>background:</strong> Nos permite colocar un fondo para la tabla a partir de un enlace a una imagen.
+  </p>
+  <p>
+    <strong>bgcolor:</strong> Da color de fondo a la tabla.
+  </p>
+  <p>
+    <strong>border:</strong> Define el número de pixels del borde principal.
+  </p>
+  <p>
+    <strong>bordercolor:</strong> Define el color del borde.
+  </p>
+  <p>
+    <strong>cellpadding:</strong> Define, en pixels, el espacio entre los bordes de la celda y el contenido de la misma.
+  </p>
+  <p>
+    <strong>cellspacing:</strong> Define el espacio entre los bordes (en pixels).
+  </p>
+  <p>
+    <strong>height:</strong> Define la altura de la tabla en pixels o porcentaje.
+  </p>
+  <p>
+    <strong>width:</strong> Define la anchura de la tabla en pixels o porcentaje.
+  </p>
+  <p>
+    <strong>coll</strong> Define la selección de un columna
+  </p>
+  <div></div>
+</body>
+
+</html>
